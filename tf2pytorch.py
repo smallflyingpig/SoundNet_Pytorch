@@ -76,7 +76,7 @@ def get_parser():
 def main(args):
     tf_param_path = args.tf_param_path
     pytorch_param_path = args.pytorch_param_path
-    tf_param = np.load(tf_param_path, encoding='latin1').tolist()
+    tf_param = np.load(tf_param_path, encoding='latin1', allow_pickle=True).tolist()
     print("load tf param:{}".format(tf_param_path))
     pytorch_param = convert_tf2pytorch(tf_param, g_param_dict)
     torch.save(pytorch_param, pytorch_param_path)

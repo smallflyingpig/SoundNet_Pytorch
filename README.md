@@ -22,7 +22,7 @@ cd SoundNet_Pytorch
 3. install the prerequisites
 4. run
 ```
-python tf2pytorch --tf_param_path ./sound8.npy --pytorch_param_path ./sound8.pth
+python tf2pytorch.py --tf_param_path ./sound8.npy --pytorch_param_path ./sound8.pth
 ```
 5. test the result
 
@@ -36,6 +36,12 @@ layer error:
 [-1.3113022e-06, 0.0, 0.0, 0.0, 1.4901161e-08, 0.0, -6.9849193e-10, 4.7683716e-07, 7.1525574e-07]
 ```
 This indicates the success of our model conversion.
+
+6. extract features
+after the pytorch model is got(save as ./sound8.pth), run the following command to extract features:
+```
+python example.py
+```
 # Acknowledgments
 Code for soundnet tensorflow model is ported from [soundnet_tensorflow](https://github.com/eborboihuc/SoundNet-tensorflow). Thanks for his works!
 
