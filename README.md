@@ -10,6 +10,7 @@ The code is for converting the pretrained [tensorflow soundnet model](https://gi
 1. tensorflow (cpu or gpu)
 2. python 3.6 with numpy
 3. pytorch 0.4+
+4. weight file: google drive: https://drive.google.com/drive/folders/1zjNiuLgZ1cjCzF80P4mlYe4KSGGOFlta?usp=sharing; 百度网盘：链接：https://pan.baidu.com/s/1v_K2pJvo0KE38EZ__WZJWg 提取码：iz4h 
 
 
 # How to use
@@ -49,3 +50,4 @@ Code for soundnet tensorflow model is ported from [soundnet_tensorflow](https://
 Feel free to mail me(jiguo.li@vipl.ict.ac.cn or jgli@pku.edu.cn) if you have any questions about this project.
 # reference
 1. Yusuf Aytar, Carl Vondrick, and Antonio Torralba. "Soundnet: Learning sound representations from unlabeled video." Advances in Neural Information Processing Systems. 2016.
+
